@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: gabrielterapeuta/portal-gabriel-ferreira
+  branch: main
+media_folder: "images"
+public_folder: "/images"
+collections:
+  - name: "poesia"
+    label: "Poética & Contemplação"
+    folder: "conteudo/poesia"
+    create: true
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Categoria", name: "category", widget: "select", options: ["Poesia Transcendente", "Poesia Clínica", "Contemplações do Presente", "Diários de Formação"]}
+      - {label: "Texto", name: "body", widget: "markdown"}
+  - name: "aforismos"
+    label: "Aforismos & Sínteses"
+    folder: "conteudo/aforismos"
+    create: true
+    fields:
+      - {label: "Frase", name: "title", widget: "string"}
+      - {label: "Categoria", name: "category", widget: "select", options: ["Aforismos da Alma", "Aforismos Psicológicos"]}
+      - {label: "Reflexão (Opcional)", name: "body", widget: "markdown", required: false}
