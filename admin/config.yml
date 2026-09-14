@@ -3,6 +3,9 @@ backend:
   repo: gabrielterapeuta/portal-gabriel-ferreira
   branch: main
 
+site_url: https://gabrielhferreira.com
+publish_mode: editorial_workflow
+
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
