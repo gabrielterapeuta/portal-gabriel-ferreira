@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: gabrielterapeuta/portal-gabriel-ferreira
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "aforismos"
+    label: "Aforismos & Sínteses"
+    folder: "content/aforismos"
+    create: true
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+
+  - name: "poesia"
+    label: "Poética & Contemplação"
+    folder: "content/poesia"
+    create: true
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
